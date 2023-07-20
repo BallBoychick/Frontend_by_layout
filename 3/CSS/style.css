@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  margin: 0;
+}
+
+.body-m {
+  background-image: url('../../4/IMG/Фигура\ 1.jpg');
+  background-repeat: no-repeat;
+  background-position: 40% 100%;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: #080808;
+  padding: 3px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222020;
+}
+
+.main-content div {
+  display: inline-block;
+}
+
+.main-content a {
+  color: white;
+}
+
+/* .heading {
+  color: rgb(244, 239, 239);
+  font-family: 'Graphik LCG', sans-serif;
+  margin-bottom: 30px;
+} */
+
+.download {
+  /* display: inline-block; */
+  padding: 20px;
+  color: white;
+  background: #2f1ce4;
+  border: solid 3px #2f1ce4;
+}
+
+.more-detailed {
+  /* display: inline-block; */
+  padding: 20px;
+  color: white;
+  background: transparent;
+  border: solid 3px white;
+}
+
+.container {
+  width: 1920px;
+  height: 2261px;
+  font-weight: 1170px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.arrow {
+  margin: 0 auto;
+  padding-left: 30px;
+  background-image: url("../IMG/return.png");
+  background-position: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.arrow2 {
+  margin: 0 auto;
+  padding-left: 30px;
+  background-image: url("../IMG/return.png");
+  background-position: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  margin-left: 400px;
+}
+
+
+h1 {
+  margin-top: 100px;
+  padding-left: 100px;
+  font-size: 48px;
+  color: #222020;
+}
+
+h2 {
+  color: #2f1ce4;
+  padding-left: 180px;
+  font-size: 36px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.h1-m {
+  margin-top: 120px;
+  margin-bottom: 83px;
+  /* padding-top: 120px; */
+  padding-left: 470px;
+  font-size: 48px;
+  color: #222020;
+}
+
+.h2-m {
+  color: #2f1ce4;
+  padding-left: 40px;
+  font-size: 36px;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+p {
+  padding-left: 180px;
+  margin-bottom: 20px;
+}
+.list {
+  padding-left: 200px;
+  font-size: 18px;
+}
+
+.list-m {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('../fonts/GraphikLCG-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  background: #E1E4EC;
+}
+
+th {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+tbody {
+  text-align: left;
+}
+
+tfoot {
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  padding-left: 200px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+img {
+  max-width: 480px;
+  max-height: 323px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+figcaption {
+  color: #060606;
+  padding: 3px;
+  text-align: center;
+  font-family: 'Gilroy';
+}
+
+.skillbox {
+  font-weight: 600px;
+  font-size: 40px;
+  margin-top: 57px;
+  font-family: 'Graphik LCG', sans-serif;
+  margin-bottom: 58px;
+  padding-left: 370px;
+}
+
+.list2 {
+  list-style: none;
+  font-size: 16px;
+}
+
+.list2 li {
+  margin-bottom: 1em;
+}
+
+.parent {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 78px;
+  /* margin: 0 auto; */
+}
+
+.child {
+  display: inline-block;
+  width: 480px;
+  min-height: 504px;
+  margin-right: 53px;
+  margin-bottom: 60px;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 0 0 20px #D9D8D2;
+}
+
+.right {
+  margin-right: 0;
+}
+
+.number {
+  font-family: 'Gilroy', sans-serif;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 48px;
+  color: #eaeaea;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-center {
+  font-family: 'Gilroy', sans-serif;
+  color: #2f1ce4;
+  font-weight: 18px;
+  padding: 28px 78px;
+  margin: 0 auto;
+  border: solid 3px #2f1ce4;
+}
