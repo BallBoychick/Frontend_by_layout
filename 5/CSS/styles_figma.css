@@ -77,9 +77,41 @@ ul {
 
 .section-land-list {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-2-lands {
+  display: flex;
   flex-direction: column;
 }
 
+.about-us h1 {
+  width: 109px;
+  height: 40px;
+  margin-left: 415px;
+  margin-right: 1396px;
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us p {
+  width: 888px;
+  height: 192px;
+  flex-shrink: 0;
+  margin-left: 375px;
+  margin-right: 657px;
+  color: #000;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%
+}
 .rectangle{
   position: absolute;
   width: 261px;
