@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background: #E5E5E5;
-  width: 1920px;
-  height: 5677px;
-} */
 h1 {
   padding-left: 45px;
 }
@@ -14,6 +9,7 @@ body {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  background: #F1F1F1;
 }
 
 html {
@@ -21,13 +17,11 @@ html {
 }
 
 .header {
-  height: 100px;
+  height: 154px;
 }
-
-/* .container {
-  padding-right: 45px;
-  padding-left: 45px;
-} */
+p {
+  margin: 0;
+}
 
 a {
   color: inherit;
@@ -40,46 +34,79 @@ ul {
   list-style: none;
 }
 
+/* Header */
+
 .header-container {
-  padding-right: 45px;
-  padding-left: 45px;
-  border-radius: 10px;
-  border: 1px solid #C93;
+  width: 1170px;
+  height: 100%;
+}
+
+.header-l-r {
   display: flex;
   justify-content: space-between;
+  margin-top: 47px;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  display: flex;
   align-items: center;
-  height: 100%;
+}
+
+.header-contacts-link {
+  margin-left: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-radius: 15px;
+  background: #FFF;
 }
 
 .nav-list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45px;
+  flex-shrink: 0;
 }
 
-.nav-item {
-  color: #666;
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.tour-ring {
+  display: flex;
+  margin-right: 45px;
+  padding: 14px 0 14px 0;
+}
+
+.nav-item-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-item-btn {
+  display: inline-flex;
+  padding: 13px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #C93;
+}
+
+.nav-link-btn {
+  color: #C93;
   font-family: Muller;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 45px;
 }
-
-.nav-item-btn {
-  list-style: none;
-  margin-right: 45px;
-  border-radius: 10px;
-  border: 1px solid #C93;
-  padding: 13px 20px;
-}
-
-.tour-ring {
-  display: flex;
-  margin: 0;
-  padding: 0;
-
+/* Section land */
+.special-container {
+  margin-top: 70px;
 }
 
 .section-land-list {
@@ -96,8 +123,30 @@ ul {
 .about-us {
   width: 888px;
   height: 252px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 70px;
+}
+
+.about-us-hading {
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us-description {
+  color: #000;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+}
+
+/* Services */
+.services {
+  margin-top: 70px;
 }
 
 .services-list {
@@ -118,6 +167,11 @@ ul {
   font-style: normal;
   font-weight: 500;
   line-height: 200%; /* 40px */
+}
+
+/* Advantages */
+.advantages {
+  margin-top: 70px;
 }
 
 .advantage-list {
@@ -150,114 +204,6 @@ width: 276px;
   border: 1px solid #C93;
 }
 
-.rectangle{
-  position: absolute;
-  width: 261px;
-  height: 54px;
-  left: 0px;
-  top: 0px;
-  background: #F0BF5F;
-  border-radius: 15px;
-  margin-left: 375px;
-  margin-top: 30px;
-}
-
-.img-text{
-  position: absolute;
-  width: 138.89px;
-  height: 39.44px;
-  margin-left: 23.18px;
-  margin-right: 99px;
-  margin-top: 7px;
-  /* background: #FFFFFF; */
-}
-
-.img-logo{
-  position: absolute;
-  float: right;
-  margin-left: 179px;
-}
-
-.substract{
-  position: absolute;
-  width: 16.22px;
-  height: 10.2px;
-  margin-left: 205px;
-  margin-top: 13.35px;
-}
-
-.substract1{
-  position: absolute;
-  width: 21.45px;
-  height: 22.35px;
-  margin-left: 218px;
-  margin-top: 13.35px;
-}
-
-.mouth{
-  position: absolute;
-  width: 16.44px;
-  height: 6.5px;
-  margin-left: 215px;
-  margin-top: 36px;
-}
-
-.contacts-link{
-  position: absolute;
-  display: inline-block;
-  left: 0%;
-  right: -5.49%;
-  top: 0%;
-  bottom: 0%;
-  width: 179px;
-  height: 20px;
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #666666;
-  text-decoration: none;
-  margin-left: 676px;
-  margin-top: 47px;
-}
-
-.arrow {
-  /* display: block; */
-  /* margin: 0 auto; */
-  /* background-image: url("../IMG-FIGMA/arrow.svg"); */
-  background-position: right;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  text-align: right;
-  margin-top: 50px;
-  margin-right: 508px;
-}
-.arrow a{
-  font-family: 'Muller';
-  width: 126px;
-  height: 16px;
-  padding-left: 7px;
-  font-weight: 500;
-  color: #CC9933;
- }
-/* .arrow-text{
-  font-family: 'Muller';
-  width: 126px;
-  height: 16px;
-  padding-left: 7px;
-  font-weight: 500;
-  color: #CC9933;
-} */
-
-/* .arrow-text{
-  font-family: 'Muller';
-  font-weight: 500;
-  color: #CC9933;
-  float: right;
-  text-decoration: none;
-  margin-top: 50px;
-} */
 @font-face {
   font-family: 'Muller';
   src: url('../fonts/MullerBold.woff2') format('woff2'),
