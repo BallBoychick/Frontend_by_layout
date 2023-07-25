@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('.../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 401;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -53,8 +89,35 @@ ul {
   align-items: center;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.header-arrow-icon {
+  width: 24px;
+  height: 24px;
+  background: url('/7/Figma/IMG-FIGMA/arrow.svg') center center no-repeat transparent;
+}
+
+.header-personal-account {
+  color: #C93;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
 .header-contacts-link {
   margin-left: 40px;
+  color: #666;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .nav {
@@ -96,6 +159,15 @@ ul {
   border: 1px solid #C93;
 }
 
+.nav-link {
+  color: #666;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .nav-link-btn {
   color: #C93;
   font-family: Muller;
@@ -105,6 +177,15 @@ ul {
   line-height: normal;
 }
 /* Section land */
+.section-land-heading {
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: normal;
+}
+
 .special-container {
   margin-top: 70px;
 }
@@ -119,6 +200,52 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
+.maldives-islands {
+  width: 573px;
+  height: 258px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url('/7/Figma/IMG-FIGMA/Rectangle\ 15.jpg') lightgray 50% / cover no-repeat;
+}
+
+.maldives-islands-heading {
+  width: 420px;
+  color: #FFF;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 45px;
+}
+
+.maldives-islands-sold {
+  color: #FFF;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 45px;
+}
+
+.maldives-islands-more {
+  display: block;
+  width: 101.278px;
+  height: 16px;
+  color: #F0BF5F;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 45px;
+  margin-top: 47px;
+  background: url('/7/Figma/IMG-FIGMA/half-rect.svg') right no-repeat;
+}
+
+/* Abous us */
 
 .about-us {
   width: 888px;
@@ -204,38 +331,3 @@ width: 276px;
   border: 1px solid #C93;
 }
 
-@font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff');
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerLight.woff2') format('woff2'),
-    url('../fonts/MullerLight.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerRegular.woff2') format('woff2'),
-    url('.../fonts/MullerRegular.woff') format('woff');
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerMedium.woff2') format('woff2'),
-    url('../fonts/MullerMedium.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
