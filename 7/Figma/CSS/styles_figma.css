@@ -232,8 +232,10 @@ ul {
 }
 /* FIX LINK */
 .more-content {
-  height: 16px;
-  display: flex;
+  height: auto;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
   margin-left: 45px;
   margin-top: 47px;
   margin-bottom: 45px;
@@ -255,7 +257,6 @@ ul {
   stroke-width: 2px;
   stroke: #F0BF5F;
   background: url('/7/Figma/IMG-FIGMA/half-rect.svg') no-repeat;
-  transform: translateY(-2px);
 }
 
 .crete-island {
@@ -314,12 +315,12 @@ ul {
   margin-top: 70px;
 }
 
-.about-us-hading {
+.about-us-heading {
   color: #333;
   font-family: Muller;
   font-size: 40px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 401;
   line-height: normal;
 }
 
@@ -328,24 +329,61 @@ ul {
   font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 401;
   line-height: 200%; /* 32px */
 }
 
 /* Services */
 .services {
+  width: 1170px;
+  height: 744px;
   margin-top: 70px;
 }
 
+.services-heading {
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: normal;
+}
+
 .services-list {
-  display: grid;
-  grid-template: repeat(2, 100px) / repeat(2, 1fr);
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-item {
-  width: 402px;
-  height: 64px;
+  width: 573px;
+  height: 330px;
+  background: #FFF;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.services-icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 573px;
+  height: 165px;
+  margin-bottom: 26px;
+}
+
+.services-icon-flute {
+  background-image: url('/7/Figma/IMG-FIGMA/10.png')
+}
+
+.services-icon-room {
+  background-image: url('/7/Figma/IMG-FIGMA/15.png')
+}
+
+.services-icon-pool {
+  background-image: url('/7/Figma/IMG-FIGMA/12.jpg')
+}
+
+.services-icon-cars {
+  background-image: url('/7/Figma/IMG-FIGMA/carlo-d-agnolo-aFxSh_l4fbY-unsplash.png')
 }
 
 .services-item a{
@@ -357,22 +395,135 @@ ul {
   line-height: 200%; /* 40px */
 }
 
+.services-item:nth-child(2)
+{
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.services-item:nth-child(4)
+{
+  margin-left: 24px;
+}
+
+.services-item-more {
+  height: 40px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 45px;
+
+}
+.services-item-more-text {
+  color: #FFF;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 40px */
+}
+
+.services-item-more-icon {
+  display: flex;
+  width: 11px;
+  height: 18px;
+  margin-left: 5px;
+  stroke-width: 2px;
+  stroke: #FFF;
+  background: url('/7/Figma/IMG-FIGMA/Rectangle_services.svg') no-repeat;
+}
+
+.services-description {
+  width: 402px;
+  height: 64px;
+  color: #000;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: 200%; /* 32px */
+  margin-left: 45px;
+}
+
 /* Advantages */
 .advantages {
+  height: 634px;
   margin-top: 70px;
 }
 
-.advantage-list {
+.advantages-heading {
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: normal;
+}
+
+.advantage-list-up {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.advantage-item:not(:last-child) {
+  margin-right: 22px;
+}
+
+.advantage-list-down {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .advantage-item {
-width: 276px;
+  width: 276px;
+  height: 276px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.advantage-item-img {
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+.advantage-item-description {
+  width: 189px;
+  height: 128px;
+  color: #000;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: 200%; /* 32px */
+  margin-left: 45px;
+}
+
+/* Accomodations */
+.accommodation-heading {
+  color: #333;
+  font-family: Muller;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: normal;
 }
 
 .accomodation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accomodation-list-first {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accomodation-list-second {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -381,14 +532,126 @@ width: 276px;
 .accomodation-item {
   width: 374px;
   height: 440px;
+  border-radius: 15px;
+  background: #FFF;
 }
 
-.numbers {
+.accomodation-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.accomodation-item-description {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 4px;
+  margin-right: 52px;
+  margin-top: 32px;
+  margin-left: 45px;
+}
+
+.accomodation-item-pretext {
+  color: #999;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accomodation-item-sold {
+  color: #000;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.accomodation-item-time {
+  color: #000;
+font-family: Muller;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.accomodation-item-lagoons {
+  color: #000;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-left: 45px;
+}
+
+.accomodation-item-country {
+  color: #999;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-left: 45px;
+}
+
+.accomodation-item-numbers {
   display: inline-flex;
   padding: 13px 20px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #C93;
+  color: #C93;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  margin-left: 45px;
 }
 
+.accomodation-list-third {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accomodation-item-optons {
+  width: 374px;
+  height: 440px;
+  border-radius: 15px;
+  background: url('/7/Figma/IMG-FIGMA/41.png');
+}
+
+.accomodation-item-more {
+  height: auto;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 54px;
+  margin-top: 373px;
+
+}
+.accomodation-item-more-text {
+  color: #FFF;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 40px */
+}
+
+.accomodation-item-more-icon {
+  display: flex;
+  width: 11px;
+  height: 18px;
+  margin-left: 5px;
+  stroke-width: 2px;
+  stroke: #FFF;
+  background: url('/7/Figma/IMG-FIGMA/Rectangle_2.svg') no-repeat;
+}
