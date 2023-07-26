@@ -218,6 +218,7 @@ ul {
   font-weight: 700;
   line-height: normal;
   margin-left: 45px;
+  margin-bottom: 15px;
 }
 
 .maldives-crete-sold {
@@ -230,26 +231,39 @@ ul {
   margin-left: 45px;
 }
 /* FIX LINK */
-.maldives-crete-more {
-  display: block;
-  width: 101.278px;
+.more-content {
   height: 16px;
+  display: flex;
+  margin-left: 45px;
+  margin-top: 47px;
+  margin-bottom: 45px;
+}
+.more-content-text {
   color: #F0BF5F;
   font-family: Muller;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: 45px;
-  margin-top: 47px;
-  background: url('/7/Figma/IMG-FIGMA/half-rect.svg') right no-repeat;
+}
+
+.more-content-icon {
+  display: flex;
+  width: 11px;
+  height: 18px;
+  margin-left: 5px;
+  stroke-width: 2px;
+  stroke: #F0BF5F;
+  background: url('/7/Figma/IMG-FIGMA/half-rect.svg') no-repeat;
+  transform: translateY(-2px);
 }
 
 .crete-island {
   width: 573px;
   height: 258px;
   margin-top: 24px;
-  background: url('/7/Figma/IMG-FIGMA/crete.png');
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url('/7/Figma/IMG-FIGMA/crete.png');
 }
 
 .crete-island-heading {
@@ -261,6 +275,37 @@ ul {
   font-weight: 700;
   line-height: normal;
 }
+
+.section-1-land {
+  width: 573px;
+  height: 540px;
+  margin-left: 24px;
+  background: url('/7/Figma/IMG-FIGMA/33\ 1.jpg');
+}
+
+.section-luxury-heading {
+  width: 299px;
+  color: #FFF;
+  font-family: Muller;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 212px;
+  margin-left: 45px;
+  margin-bottom: 0;
+}
+
+.section-luxury-sold {
+  color: #FFF;
+  font-family: Muller;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 45px;
+}
+
 /* Abous us */
 
 .about-us {
