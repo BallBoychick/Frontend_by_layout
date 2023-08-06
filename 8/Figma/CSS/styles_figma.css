@@ -336,8 +336,7 @@ ul {
 /* Services */
 .services {
   width: 1170px;
-  height: 744px;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .services-heading {
@@ -347,6 +346,7 @@ ul {
   font-style: normal;
   font-weight: 401;
   line-height: normal;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -452,9 +452,9 @@ ul {
   margin-top: 70px;
 } */
 
-.advantages-container {
-  margin-top: 70px;
-  height: 634px;
+.advantages {
+  /* height: 634px; */
+  padding-top: 70px;
 }
 
 .advantages-heading {
@@ -509,7 +509,7 @@ ul {
 }
 
 /* Accomodations */
-.accommodation-container {
+.accommodation {
   padding-top: 70px;
 }
 
@@ -520,6 +520,7 @@ ul {
   font-style: normal;
   font-weight: 401;
   line-height: normal;
+  margin-top: 0;
 }
 
 .accomodation-list {
@@ -786,10 +787,6 @@ legend {
   padding-bottom: 40px;
 }
 
-.contacts-container {
-  height: 678px;
-}
-
 .section-contacts-heading {
   color: #333;
   font-family: Muller;
@@ -885,7 +882,7 @@ legend {
 }
 
 .contacts-btn {
-  padding-top: 45px;
+  padding-top: 25px;
   padding-left: 45px;
 }
 
@@ -915,8 +912,8 @@ legend {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  height: 341px;
-  padding-top: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   border-radius: 15px;
   background:#333;
   background-image: url('/8/Figma/IMG-FIGMA/logo_footer.svg');
@@ -949,11 +946,11 @@ legend {
 }
 
 .footer-left-item:nth-child(1) {
-  margin-bottom: 37px;
+  padding-bottom: 37px;
 }
 
 .footer-left-item:nth-child(2) {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-left-item:nth-child(3) {
