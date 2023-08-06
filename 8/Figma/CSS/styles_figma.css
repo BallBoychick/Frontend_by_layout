@@ -447,9 +447,14 @@ ul {
 }
 
 /* Advantages */
-.advantages {
+/* .advantages {
   height: 634px;
   margin-top: 70px;
+} */
+
+.advantages-container {
+  margin-top: 70px;
+  height: 634px;
 }
 
 .advantages-heading {
@@ -459,6 +464,7 @@ ul {
   font-style: normal;
   font-weight: 401;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .advantage-list-up {
@@ -503,6 +509,10 @@ ul {
 }
 
 /* Accomodations */
+.accommodation-container {
+  padding-top: 70px;
+}
+
 .accommodation-heading {
   color: #333;
   font-family: Muller;
@@ -840,14 +850,32 @@ legend {
   flex-direction: column;
 }
 
-.contacts-tel-link {
+.email-link {
+  color: #C93;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 401;
+  line-height: 150%; /* 24px */
+}
+
+.contacts-emails-text {
+  color: #999;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.tel-link {
   width: 146px;
   height: 24px;
   color: #C93;
   font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 401;
   line-height: 150%; /* 24px */
 }
 
@@ -906,6 +934,10 @@ legend {
   flex-direction: column;
 }
 
+.footer-middle-list:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .footer-left-item {
   width: 302px;
   color: #FFF;
@@ -930,6 +962,7 @@ legend {
 
 .footer-middle {
   display: flex;
+  flex-direction: column;
 }
 
 .footer-middle-list {
@@ -939,6 +972,7 @@ legend {
 }
 
 .footer-middle-item {
+  display: flex;
   color: #FFF;
   font-family: Muller;
   font-size: 16px;
