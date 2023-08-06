@@ -12,3 +12,27 @@ FORM
 checkbox
 input type=radio
 text area
+
+код в форму
+<!-- <fieldset>
+          <legend>Choose city:</legend>
+          <select name="cities" id="cities-select">
+          <option value="">--Please choose an option--</option>
+          <option value="saint-petersburg">Санкт-Петербург</option>
+          <option value="saransk">Саранск</option>
+          <option value="sevastopol">Севастополь</option>
+          <option value="simferopol">Симверополь</option>
+          <option value="sochi">Сочи</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Choose city:</legend>
+          <select name="cities" id="cities-select">
+            <option value="">--Please choose an option--</option>
+            <option value="saint-petersburg">Санкт-Петербург</option>
+            <option value="saransk">Саранск</option>
+            <option value="sevastopol">Севастополь</option>
+            <option value="simferopol">Симверополь</option>
+            <option value="sochi">Сочи</option>
+            </select>
+        </fieldset> -->
