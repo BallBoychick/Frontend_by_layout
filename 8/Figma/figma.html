@@ -433,30 +433,45 @@
       </h2>
       <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
 
-        <div class="form-group">
-          <label for="exampleCity">город вылета</label>
-          <select name="cities" id="exampleCity" class="form-select">
-            <option value="">--Please choose an option--</option>
-            <option value="saint-petersburg">Санкт-Петербург</option>
-            <option value="saransk">Саранск</option>
-            <option value="sevastopol">Севастополь</option>
-            <option value="simferopol">Симверополь</option>
-            <option value="sochi">Сочи</option>
+          <label for="exampleCity" class="form-group">Город вылета
+            <select name="cities" id="exampleCity" class="form-select">
+              <option value="saint-petersburg">Санкт-Петербург</option>
+              <option value="saransk">Саранск</option>
+              <option value="sevastopol">Севастополь</option>
+              <option value="simferopol">Симверополь</option>
+              <option value="sochi">Сочи</option>
             </select>
-        </div>
-        <!-- <p>город вылета</p>
-        <select name="cities" id="cities-select">
-        <option value="">--Please choose an option--</option>
-        <option value="saint-petersburg">Санкт-Петербург</option>
-        <option value="saransk">Саранск</option>
-        <option value="sevastopol">Севастополь</option>
-        <option value="simferopol">Симверополь</option>
-        <option value="sochi">Сочи</option>
-        </select> -->
+          </label>
 
-        <!-- <button type="submit" class="btn btn-submit">
-          Get started
-        </button> -->
+          <label for="exampleCountry" class="form-group">Страна
+            <select name="cities" id="exampleCountry" class="form-select">
+              <option value="saint-petersburg">Австралия</option>
+              <option value="saransk">Австрия</option>
+              <option value="sevastopol">Азербайджан</option>
+              <option value="simferopol">Англя</option>
+              <option value="sochi">Албания</option>
+            </select>
+          </label>
+
+          <label for="arrival_date" class="form-group"> Дата прибытия
+            <input type="date" id="arrival_date" name="trip-start" value="2023-07-22" min="2024-01-01" max="2018-12-31" class="date-arrive"/>
+          </label>
+
+          <label for="tentacles" class="form-group"> Ночей
+
+            <input type="number" id="tentacles" name="tentacles" min="1" max="21" class="numbers" value="1"/>
+          </label>
+
+          <label for="tentacles-2" class="form-group"> Туристы
+
+            <input type="number" id="tentacles-2" name="tentacles" min="1" max="21" class="numbers" value="1"/>
+          </label>
+
+          <div class="form-group">
+            <button type="submit" class="btn-submit">
+              Найти
+            </button>
+          </div>
       </form>
     </div>
   </section>
@@ -468,9 +483,36 @@
       </h1>
       <div class="contacts-content">
         <div class="contacts-information">
-          <p class="contacts-heading">Адрес</p>
-          <address class="contacts-address">Москва, улица Юности, дом 5 строение 4, офис 2</address>
+          <div class="contacts-information-item">
+            <p class="contacts-heading">Адрес</p>
+            <address class="contacts-address">Москва, улица Юности, дом&nbsp;5&nbsp;строение&nbsp;4, офис&nbsp;2</address>
+          </div>
+
+          <div class="contacts-information-item">
+            <p class="contacts-heading">Телефоны</p>
+            <address class="contacts-address">+7&nbsp;499&nbsp;535-64-34 +7&nbsp;495&nbsp;005-05-44</address>
+          </div>
+
+          <div class="contacts-information-item">
+            <p class="contacts-heading">Email</p>
+            <div class="contacts-emails">
+              <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru <p> по вопросам бронирования</p></a>
+              <a href="hotels.ln@mail.ru">hotels.ln@mail.ru <p>по вопросам сотрудничества</p></a>
+            </div>
+          </div>
+
+          <div class="contacts-information-item">
+            <p class="contacts-heading">График</p>
+            <address class="contacts-address">Понедельник-пятница, с 10:00 до 19:00</address>
+          </div>
+          <div class="contacts-btn">
+            <button type="submit" class="contacts-btn-submit">
+              Построить маршрут
+            </button>
+          </div>
         </div>
+        <img src="/8/Figma/IMG-FIGMA/Layer_contact.png" class="contact-img">
+
       </div>
     </div>
   </section>
