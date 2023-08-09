@@ -134,16 +134,16 @@ html {
   background-size: contain;
 }
 
-.hero-container {
+.section-hero__container {
   padding-top: 120px;
   padding-bottom: 130px;
 }
 
-.hero-content {
+.section-hero__content {
   max-width: 50%;
 }
 
-.section-hero-heading {
+.section-hero__heading {
   font-size: 40px;
   margin-bottom: 30px;
   line-height: 52px;
@@ -152,11 +152,11 @@ html {
   color: #1c1c1c;
 }
 
-.section-hero-action {
+.section-hero__action {
   display: inline-block;
 }
 
-.section-hero-ssl-icon {
+.section-hero__ssl-icon {
   display: inline-block;
   width: 13px;
   height: 17px;
@@ -166,14 +166,14 @@ html {
   transform: translateY(-2px);
 }
 
-.section-hero-description {
+.section-hero__description {
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 25px;
   color: #787878;
 }
 
-.section-hero-btn-description {
+.section-hero__btn-description {
   display: flex;
   align-items: center;
   justify-content: center;
