@@ -648,26 +648,35 @@ line-height: normal;
 .accomodation-item-optons {
   width: 374px;
   height: 440px;
+  position: relative;
+  height: auto;
+  display: flex;
   border-radius: 15px;
   background: url('/7/Figma/IMG-FIGMA/41.png');
 }
-
-.accomodation-item-more {
-  height: auto;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: 54px;
-  margin-top: 373px;
-
-}
 .accomodation-item-more-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: #FFF;
   font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 200%; /* 40px */
+  padding-top: 373px;
+  padding-left: 54px;
+}
+
+.accomodation-item-more-text::before {
+  content: '';
+  width: 374px;
+  height: 440px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: #5b6dcd; */
 }
 
 .accomodation-item-more-icon {
