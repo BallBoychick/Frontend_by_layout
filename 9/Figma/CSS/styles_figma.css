@@ -647,13 +647,14 @@ line-height: normal;
 
 .accomodation-item-optons {
   width: 374px;
-  height: 440px;
   position: relative;
-  height: auto;
   display: flex;
   border-radius: 15px;
+  padding-top: 373px;
+  padding-left: 54px;
   background: url('/7/Figma/IMG-FIGMA/41.png');
 }
+
 .accomodation-item-more-text {
   position: relative;
   display: flex;
@@ -665,8 +666,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 500;
   line-height: 200%; /* 40px */
-  padding-top: 373px;
-  padding-left: 54px;
+  max-height: 40px;
 }
 
 .accomodation-item-more-text::before {
