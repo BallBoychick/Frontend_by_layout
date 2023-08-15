@@ -1027,3 +1027,67 @@ legend {
   height: 25px;
   background-image: url('/8/Figma/IMG-FIGMA/vk.svg');
 }
+
+.weight__min {
+  display: inline-block;
+  padding-bottom: 40px;
+  min-width: 100px;
+}
+
+.weight__max {
+  display: inline-block;
+  padding-bottom: 40px;
+  max-width: 50px;
+
+}
+
+.weight_text {
+  display: flex;
+  justify-content: center;
+  background-color: #5b6dcd;
+  font-size: 30px;
+  color: rgb(251, 251, 251);
+  padding: 10px;
+}
+
+.position {
+  position: relative;
+  border: 5px solid green;
+  max-width: 800px;
+  margin: 0px auto;
+  height: 800px;
+}
+
+.position__text {
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+}
+
+.postition__relative {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  color: white;
+  background-color: rgb(31, 53, 94);
+}
+
+.postition__relative__2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: rgb(94, 31, 31);
+}
+
+.position__absolute {
+  position: absolute;
+  top: 110px;
+  left: 50px;
+  width: 100%;
+  color: rgb(3, 2, 2);
+  background-color: rgb(159, 73, 19);
+  /* z-index: 1; */
+}
