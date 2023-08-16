@@ -12,7 +12,7 @@
   src: url('../fonts/MullerLight.woff2') format('woff2'),
     url('../fonts/MullerLight.woff') format('woff');
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -21,7 +21,7 @@
   src: url('../fonts/MullerRegular.woff2') format('woff2'),
     url('.../fonts/MullerRegular.woff') format('woff');
   font-display: swap;
-  font-weight: 401;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -46,10 +46,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: #F1F1F1;
+  color: var(--text-main-color);
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Muller', sans-serif;
 }
 
 .header {
@@ -68,6 +69,22 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+:root {
+  --heading-color:#333;
+  --text-main-color: #000;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid #C93;
+  color: #C93;
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Header */
@@ -103,17 +120,15 @@ ul {
 
 .header-personal-account {
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
 }
 
 .header-contacts-link {
   margin-left: 40px;
   color: #666;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -161,19 +176,17 @@ ul {
 
 .nav-link {
   color: #666;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
 .nav-link-btn {
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 /* Section land */
@@ -182,11 +195,10 @@ ul {
 }
 
 .section-land-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -212,7 +224,6 @@ ul {
 .maldives-crete-heading {
   width: 420px;
   color: #FFF;
-  font-family: Muller;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -223,10 +234,9 @@ ul {
 
 .maldives-crete-sold {
   color: #FFF;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-left: 45px;
 }
@@ -242,10 +252,9 @@ ul {
 }
 .more-content-text {
   color: #F0BF5F;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -270,7 +279,6 @@ ul {
 .crete-island-heading {
   width: 420px;
   color: #FFF;
-  font-family: Muller;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -287,7 +295,6 @@ ul {
 .section-luxury-heading {
   width: 299px;
   color: #FFF;
-  font-family: Muller;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -299,10 +306,9 @@ ul {
 
 .section-luxury-sold {
   color: #FFF;
-  font-family: Muller;
   font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-left: 45px;
 }
@@ -316,20 +322,17 @@ ul {
 }
 
 .about-us-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
 }
 
 .about-us-description {
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 200%; /* 32px */
 }
 
@@ -340,11 +343,10 @@ ul {
 }
 
 .services-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
   margin-top: 0;
   margin-bottom: 20px;
@@ -389,7 +391,6 @@ ul {
 
 .services-item a{
   color: #C93;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -417,7 +418,6 @@ ul {
 }
 .services-item-more-text {
   color: #FFF;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -437,11 +437,9 @@ ul {
 .services-description {
   width: 402px;
   height: 64px;
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 200%; /* 32px */
   margin-left: 45px;
 }
@@ -458,11 +456,10 @@ ul {
 }
 
 .advantages-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -475,32 +472,13 @@ ul {
   flex-direction: row;
   gap: 22px;
 }
-/* .advantage-list-up {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-} */
-
-.advantage-item:not(:last-child) {
-  /* margin-right: 22px; */
-}
-
-.advantage-list-down {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 .advantage-item {
   display: block;
-  /* width: 33.33%; */
   width: calc(25% - 22px);
   height: 276px;
   border-radius: 15px;
   background: #FFF;
-  /* margin-bottom: 22px; */
-  /* tut fix */
 }
 
 .advantage-item-img {
@@ -511,11 +489,9 @@ ul {
 .advantage-item-description {
   width: 189px;
   height: 128px;
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 200%; /* 32px */
   margin-left: 45px;
 }
@@ -526,11 +502,10 @@ ul {
 }
 
 .accommodation-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
   margin-top: 0;
 }
@@ -575,16 +550,13 @@ ul {
 
 .accomodation-item-pretext {
   color: #999;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
 .accomodation-item-sold {
-  color: #000;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -592,20 +564,16 @@ ul {
 }
 
 .accomodation-item-time {
-  color: #000;
-font-family: Muller;
 font-size: 16px;
 font-style: normal;
-font-weight: 400;
+font-weight: 300;
 line-height: normal;
 }
 
 .accomodation-item-lagoons {
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-top: 16px;
   margin-left: 45px;
@@ -613,10 +581,9 @@ line-height: normal;
 
 .accomodation-item-country {
   color: #999;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-top: 16px;
   margin-left: 45px;
@@ -630,10 +597,9 @@ line-height: normal;
   border-radius: 10px;
   border: 1px solid #C93;
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-top: 20px;
   margin-left: 45px;
@@ -656,12 +622,10 @@ line-height: normal;
 }
 
 .accomodation-item-more-text {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: #FFF;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -671,13 +635,12 @@ line-height: normal;
 
 .accomodation-item-more-text::before {
   content: '';
-  width: 374px;
-  height: 440px;
+  /* width: 374px;
+  height: 440px; */
   position: absolute;
-  top: 0;
-  left: 0;
-  /* background: #5b6dcd; */
+  inset: 0;
 }
+
 
 .accomodation-item-more-icon {
   display: flex;
@@ -699,11 +662,9 @@ line-height: normal;
 }
 
 .form-container .form-title {
-  color: #000;
-  font-family: Muller;
   font-size: 40px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin-left: 45px;
   padding-top: 40px;
@@ -719,11 +680,9 @@ line-height: normal;
 }
 
 select {
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -732,10 +691,9 @@ label {
   flex-direction: column;
   margin-bottom: 15px;
   color: rgb(0, 0, 0);
-  font-family: Muller;
   font-size: 12px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
   gap: 15px;
 }
@@ -774,13 +732,13 @@ legend {
 .date-arrive {
   width: 121px;
   border: none;
-  font-weight: 401;
+  font-weight: 400;
 }
 
 .numbers {
   width: 121px;
   border: none;
-  font-weight: 401;
+  font-weight: 400;
   border-bottom: 1px solid #E9E9E9;
 }
 
@@ -795,10 +753,9 @@ legend {
   border: 1px solid #C93;
   background: #FFF;
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -809,11 +766,10 @@ legend {
 }
 
 .section-contacts-heading {
-  color: #333;
-  font-family: Muller;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -840,8 +796,6 @@ legend {
 }
 
 .contacts-heading {
-  color: #000;
-  font-family: Muller;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -852,11 +806,9 @@ legend {
 
 .contacts-address {
   width: 229px;
-  color: #000;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 150%; /* 24px */
 }
 
@@ -870,19 +822,17 @@ legend {
 
 .email-link {
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 150%; /* 24px */
 }
 
 .contacts-emails-text {
   color: #999;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 150%; /* 24px */
 }
 
@@ -890,10 +840,9 @@ legend {
   width: 146px;
   height: 24px;
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: 150%; /* 24px */
 }
 
@@ -918,10 +867,9 @@ legend {
   border: 1px solid #C93;
   background-color: #FFF;
   color: #C93;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -959,10 +907,9 @@ legend {
 .footer-left-item {
   width: 302px;
   color: #FFF;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 190%; /* 30.4px */
 }
 
@@ -992,10 +939,9 @@ legend {
 .footer-middle-item {
   display: flex;
   color: #FFF;
-  font-family: Muller;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px; /* 187.5% */
 }
 
@@ -1099,4 +1045,26 @@ legend {
   color: rgb(3, 2, 2);
   background-color: rgb(159, 73, 19);
   /* z-index: 1; */
+}
+
+.linka {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 3px solid red;
+  padding-top: 10px;
+}
+
+.linka_prop {
+  /* position: relative; */
+}
+
+.linka_prop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: #5b6dcd; */
+  width: 100%;
+  height: 100%;
 }
