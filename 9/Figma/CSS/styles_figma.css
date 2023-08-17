@@ -87,6 +87,29 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: transform 1s;
+}
+
+.btn:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  color: #FFF;
+  background: #C93;
+}
+
+.btn:focus {
+  color: #FFF;
+  background: #C93;
+  border: none;
+  outline: 0;
+}
+
+.btn:active {
+  color: #FFF;
+  background: #A47312;
 }
 
 .btn-medium {
@@ -119,21 +142,47 @@ ul {
 .header-right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.header-arrow-icon {
-  width: 24px;
-  height: 24px;
-  background: url('/7/Figma/IMG-FIGMA/arrow.svg') center center no-repeat transparent;
 }
 
 .header-personal-account {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
   color: #C93;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 1;
+  align-items: center;
+  transition: color, font-size 500ms ease-in-out;
+}
+
+.header-arrow-icon {
+  transform: translateY(-1.3px);
+}
+.header-personal-account:hover{
+  font-size: 18px;
+  color: #F0BF5F;
+}
+
+.header-personal-account:focus{
+  padding: 5px;
+  color: #C93;
+  outline: 0;
+  border: 1px solid #C93;
+}
+
+.header-personal-account:active{
+  color: #A47312;
+  border: none;
+}
+
+.header-personal-account:hover .header-arrow-icon path{
+  fill: #F0BF5F;
+}
+
+.header-personal-account:focus .header-arrow-icon path{
+  fill: #C93;
 }
 
 .header-contacts-link {
@@ -144,6 +193,23 @@ ul {
   font-weight: 500;
   line-height: normal;
 }
+
+.header-contacts-link:hover {
+  color: #C93;
+}
+
+.header-contacts-link:focus {
+  color: #C93;
+  padding: 5px;
+  border: 1px solid #C93;
+  outline: 0;
+}
+
+.header-contacts-link:active {
+  color: #A47312;
+  border: none;
+}
+
 
 .nav {
   display: flex;
@@ -181,6 +247,24 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: color, font-size 500ms ease-in-out;
+}
+
+.nav-link:hover {
+  font-size: 18px;
+  color: #C93;
+}
+
+.nav-link:focus {
+  color: #C93;
+  padding: 5px;
+  border: 1px solid #C93;
+  outline: 0;
+}
+
+.nav-link:active {
+  border: none;
+  color: #A47312;
 }
 
 /* Section land */
@@ -797,6 +881,7 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  transition: color .3s;
 }
 
 .contacts-emails-text {
@@ -815,6 +900,12 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  transition: color .3s;
+}
+
+.tel-link:hover,
+.email-link:hover {
+  color: #666;
 }
 
 .contact-img {
