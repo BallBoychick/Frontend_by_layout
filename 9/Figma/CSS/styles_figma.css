@@ -296,7 +296,15 @@ ul {
   height: 258px;
   flex-shrink: 0;
   border-radius: 15px;
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url('/7/Figma/IMG-FIGMA/Rectangle\ 15.jpg') lightgray 50% / cover no-repeat;
+  background: url('/7/Figma/IMG-FIGMA/Rectangle\ 15.jpg');
+  /* transition: background-size 0.2s ease; */
+  transition: background-image 1s ease;
+}
+
+.maldives-islands:hover {
+  /* background: blue; */
+  background: url('/7/Figma/IMG-FIGMA/crete.png');
+  /* меняется color с color, background url c background url */
 }
 
 .maldives-crete-heading {
@@ -506,6 +514,9 @@ ul {
 
 }
 .services-item-more-text {
+  display: flex;
+  align-items: center;
+  gap: 11px;
   color: #FFF;
   font-size: 20px;
   font-style: normal;
@@ -514,13 +525,13 @@ ul {
 }
 
 .services-item-more-icon {
-  display: flex;
-  width: 11px;
-  height: 18px;
-  margin-left: 5px;
-  stroke-width: 2px;
-  stroke: #FFF;
-  background: url('/7/Figma/IMG-FIGMA/Rectangle_services.svg') no-repeat;
+  transform: translateY(-1px);
+  transition: transform 1s;
+}
+
+.services-item-more-text:hover .services-item-more-icon {
+  transition: transform 1s;
+  transform: translate(11px);
 }
 
 .services-description {
