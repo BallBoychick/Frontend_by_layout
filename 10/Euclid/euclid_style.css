@@ -60,6 +60,12 @@ h1 {
 
 .hader__logo {
   display: flex;
+  width: 224px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.163px;
+  flex-shrink: 0;
 }
 
 .header__nav-list {
