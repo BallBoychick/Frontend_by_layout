@@ -30,6 +30,10 @@ h1 {
   margin: 0 auto;
 }
 
+h2  {
+  margin: 0 auto;
+}
+
 .btn {
   display: flex;
   width: 280px;
@@ -337,4 +341,40 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+/* Questions */
+.section-questions {
+  padding-bottom: 100px;
+}
+
+.section-questions__heading {
+  color: #333;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 32px;
+}
+
+.section-questions__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-questions__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  position: relative;
 }
